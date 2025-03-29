@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <h1>Sustainable Living</h1>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="product-details">
+        <div class="product-image">
+            <img src="https://pinksupply.in/cdn/shop/files/ink-blue-full-sleeve-pure-linen-shirt-for-men.jpg?v=1735708407&width=480" alt="Product 1">
+        </div>
+        <div class="product-info">
+            <h2>Organic Cotton Shirt</h2>
+            <p class="price">₹1,678 <span class="old-price">₹5,595</span></p>
+            <p class="description">
+                A sustainable and eco-friendly shirt made from 100% organic cotton. Comfortable, breathable, and stylish. Perfect for casual wear.
+            </p>
+
+            <!-- Size Selection -->
+            <div class="size-selection">
+                <label for="size">Choose Size:</label>
+                <select id="size" name="size">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">X-Large</option>
+                </select>
+            </div>
+
+            <!-- Customer Reviews -->
+            <div class="reviews">
+                <h3>Customer Reviews</h3>
+                <p><strong>John Doe:</strong> ★★★★★ Great quality shirt, very comfortable! Highly recommend.</p>
+                <p><strong>Jane Smith:</strong> ★★★★☆ Fits well, but the fabric could be softer.</p>
+            </div>
+
+            <!-- Buy Now Button -->
+            <button id="buyNowBtn">Buy Now</button>
+        </div>
+    </section>
+
+    <script src="product.js"></script>
+</body>
+</html>

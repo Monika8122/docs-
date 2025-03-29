@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf4e1; /* Light green background */
+    color: #2e4a3a; /* Dark green text */
+}
+
+/* Form Container */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    color: #2e4a3a; /* Dark green text */
+}
+
+/* Form Heading */
+.form-container h2 {
+    text-align: center;
+    color: #4caf50; /* Soft green for headings */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Form Labels */
+.form-container label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4caf50; /* Soft green for labels */
+}
+
+/* Form Inputs */
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #4caf50; /* Soft green border */
+    border-radius: 5px;
+    background-color: #f0f9e8; /* Light greenish background for inputs */
+    color: #2e4a3a; /* Dark green text */
+}
+
+.form-container input::placeholder {
+    color: #8fbc8b; /* Lighter green for placeholder text */
+}
+
+/* Submit Button */
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #388e3c; /* Rich green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #4caf50; /* Light green on hover */
+}
+
+/* Login Link */
+.form-container p {
+    text-align: center;
+    color: #2e4a3a; /* Dark green text for the link */
+}
+
+.form-container a {
+    color: #388e3c; /* Dark green for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container a:hover {
+    color: #4caf50; /* Lighter green on hover */
+}

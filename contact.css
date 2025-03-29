@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.5); /* Half white with transparency */
+    color: #ffffff; /* White text */
+}
+
+/* Header */
+header {
+    background: #004d1f; /* Deep Green (Primary color) */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 25px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Contact Form Section */
+.contact-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Slightly transparent white */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    color: #ffffff; /* White text */
+    text-align: center;
+}
+
+/* Form Heading */
+.contact-form h2 {
+    color: #4caf50; /* Soft Green */
+}
+
+/* Form Labels */
+.contact-form label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4caf50; /* Metallic Green */
+}
+
+/* Form Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfd8dc; /* Light blue border */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9); /* Light white background */
+    color: #333333; /* Dark grey text */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #b0bec5; /* Light grey for placeholders */
+}
+
+/* Submit Button */
+.contact-form button {
+    width: 100%;
+    background: #003366; /* Deep Blue */
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #4caf50; /* Soft Green on hover */
+    transform: scale(1.05);
+}
+
+/* Back to Home Button */
+.back-home {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button {
+    text-decoration: none;
+    background: #4caf50; /* Soft Green */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background: #2c6b2f; /* Metallic Green on hover */
+    transform: scale(1.05);
+}
+
+/* Chat Button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4caf50; /* Soft Green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+.chat-button:hover {
+    background: #2c6b2f; /* Metallic Green */
+    transform: scale(1.1);
+}
+
+/* Chat Container (Glassmorphism) */
+.chat-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+/* Chat Header */
+.chat-header {
+    background: #2c6b2f; /* Metallic Green */
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Chat Messages */
+.chat-messages {
+    padding: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Chat Messages (Sent & Received) */
+.chat-message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.chat-message.received {
+    background: rgba(255, 255, 255, 0.2); /* Light background for received */
+    color: #333333; /* Dark grey text */
+    text-align: left;
+}
+
+.chat-message.sent {
+    background: #2c6b2f; /* Metallic Green */
+    color: white;
+    text-align: right;
+    margin-left: auto;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+    border: none;
+    color: #333333; /* Dark grey text */
+    border-radius: 5px;
+}
+
+.chat-input input::placeholder {
+    color: #b0bec5; /* Light grey */
+}
+
+.chat-input button {
+    background: #2c6b2f; /* Metallic Green */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.chat-input button:hover {
+    background: #4caf50; /* Soft Green on hover */
+}
+
+/* Increase Font Size for Form Labels */
+.contact-form label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #4caf50; /* Metallic Green */
+}
+/* Sent Message */
+.chat-message.sent {
+    background: #4B9F6E; /* Metallic Green */
+    color: white;
+    text-align: right;
+    margin-left: auto;
+}
+
+/* Chat Button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4B9F6E; /* Metallic Green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+.chat-button:hover {
+    background: #3E8A57; /* Darker shade of Metallic Green */
+    transform: scale(1.1);
+}

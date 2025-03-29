@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Product Section Styling */
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #ff9900;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.size-selection {
+    margin-top: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reviews {
+    margin-top: 30px;
+}
+
+.reviews h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.reviews p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff7f00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .product-info {
+        padding-left: 0;
+        text-align: center;
+    }
+}

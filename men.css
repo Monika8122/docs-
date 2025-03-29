@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaf4e1; /* Light green background */
+    color: #2e4a3a; /* Dark green text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4caf50; /* Eco-friendly green */
+    padding: 15px;
+    color: white;
+}
+
+header nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4caf50;
+    min-width: 160px;
+    z-index: 1;
+}
+
+header nav .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav .dropdown-content a:hover {
+    background-color: #3e8e41;
+}
+
+section.search-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+section.search-section input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    background-color: #f0f9e8;
+    color: #2e4a3a;
+}
+
+section.search-section input::placeholder {
+    color: #8fbc8b;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.product {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h2 {
+    color: #4caf50;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.product .price {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+.product .old-price {
+    text-decoration: line-through;
+    color: #b0bec5;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2e4a3a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}

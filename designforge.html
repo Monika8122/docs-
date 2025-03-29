@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="designforge.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="form-container">
+        <h2>Customize Your Garment</h2>
+        <form id="garmentForm">
+            <label for="fabric">Fabric Selection:</label>
+            <select id="fabric" required>
+                <option value="Organic Cotton">Organic Cotton</option>
+                <option value="Hemp">Hemp</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Recycled Polyester">Recycled Polyester</option>
+            </select>
+    
+            <label for="colorPrint">Color & Print Choices:</label>
+            <input type="text" id="colorPrint" required>
+    
+            <label for="shoulder">Shoulder Size (cm):</label>
+            <input type="number" id="shoulder" required>
+    
+            <label for="hip">Hip Size (cm):</label>
+            <input type="number" id="hip" required>
+    
+            <label for="hand">Hand Size (cm):</label>
+            <input type="number" id="hand" required>
+    
+            <label for="breast">Breast Size (cm):</label>
+            <input type="number" id="breast" required>
+            <label for="desc">Description </label>
+            <input type="text" value="Give your Style">
+            
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+<script src="designforge.js"></script>  
+</body>
+</html>

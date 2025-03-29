@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Bright gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    width: 350px;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-message {
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    max-width: 75%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.received {
+    background-color: #ffdd57; /* Bright yellow */
+    color: #222;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #00c6ff; /* Bright cyan */
+    color: white;
+    align-self: flex-end;
+}
+
+.user-input {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 2px solid #ff4081; /* Bright pink border */
+    border-radius: 6px;
+    width: 220px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(to right, #ff512f, #dd2476); /* Bright gradient */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* Brighter hover effect */
+    transform: scale(1.05);
+}
